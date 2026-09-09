@@ -55,6 +55,7 @@ substituem a coleta que o curso ensina.
 | `nucleos.csv` | Núcleos de inflação (EX0, EX3, MS, DP, P55) e difusão | BCB/SGS | 13 — Núcleos |
 | `credito.csv` | Concessões, saldos, juros, spread e inadimplência | BCB/SGS | 14 — Crédito |
 | `focus.csv` | Expectativas de mercado (IPCA, Selic, câmbio, PIB) | BCB/Focus | 16 — Expectativas |
+| `fiscal.csv` | Arrecadação por imposto (União e estados), em 2024 | Tesouro/SICONFI (DCA) | 17 — Dados fiscais |
 | `internacional.csv` | Inflação, desemprego e PIB de vários países | FMI/IFS | 18 — Internacional |
 
 Todos têm uma coluna `data` no formato `AAAA-MM-DD`. Uso:
