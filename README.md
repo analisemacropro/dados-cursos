@@ -32,5 +32,43 @@ tabela <- readr::read_csv("https://raw.githubusercontent.com/analisemacropro/dad
 
 Os arquivos do TSE são dados públicos de votação agregada por seção eleitoral, sem identificação de eleitores.
 
+
+### `conjuntura/` — Análise de Conjuntura
+
+Séries macroeconômicas usadas nos **exercícios interativos** do curso (páginas
+`quarto-live`, que rodam Python/R no navegador). São recortes congelados das
+fontes oficiais: como o WASM do navegador não faz coleta ao vivo, o exercício
+lê o arquivo pronto. As **aulas** coletam direto da fonte — estes arquivos não
+substituem a coleta que o curso ensina.
+
+| Arquivo | Conteúdo | Fonte | Aula |
+|---|---|---|---|
+| `precos.csv` | IPCA, INPC e salário mínimo nominal, desde 2000 | IBGE/SIDRA, Ipeadata | 02 — Fundamentos |
+| `pmc.csv` | Comércio varejista ampliado: número-índice e taxas | IBGE/SIDRA 8881 | 05 — PMC |
+| `pms.csv` | Serviços: volume e receita nominal, por taxa | IBGE/SIDRA 8688 | 06 — PMS |
+| `pim.csv` | Produção industrial por categoria econômica | IBGE/SIDRA 8887 | 07 — PIM-PF |
+| `pnadc.csv` | Força de trabalho, ocupação e desocupação | IBGE/SIDRA 6318 | 08 — PNADC |
+| `caged.csv` | Admissões, desligamentos e saldo de emprego formal | Ipeadata (Novo CAGED) | 09 — CAGED |
+| `ipca.csv` | IPCA: número-índice e variações | IBGE/SIDRA | 10 e 12 — Inflação |
+| `ipca_grupos.csv` | IPCA por grupo, com peso e variação mensal | IBGE/SIDRA | 11 — Desvendando o IPCA |
+| `nucleos.csv` | Núcleos de inflação (EX0, EX3, MS, DP, P55) e difusão | BCB/SGS | 13 — Núcleos |
+| `credito.csv` | Concessões, saldos, juros, spread e inadimplência | BCB/SGS | 14 — Crédito |
+| `focus.csv` | Expectativas de mercado (IPCA, Selic, câmbio, PIB) | BCB/Focus | 16 — Expectativas |
+| `internacional.csv` | Inflação, desemprego e PIB de vários países | FMI/IFS | 18 — Internacional |
+
+Todos têm uma coluna `data` no formato `AAAA-MM-DD`. Uso:
+
+```python
+import pandas as pd
+pd.read_csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/conjuntura/precos.csv")
+```
+
+```r
+precos <- read.csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/conjuntura/precos.csv")
+```
+
+> A série do **Novo CAGED** começa em jan/2020: a anterior foi descontinuada
+> na reformulação de 2020 e não é comparável com esta.
+
 ---
 © Análise Macro — https://analisemacro.com.br
