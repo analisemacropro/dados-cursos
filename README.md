@@ -48,6 +48,7 @@ substituem a coleta que o curso ensina.
 | `pms.csv` | Serviços: volume e receita nominal, por taxa | IBGE/SIDRA 8688 | 06 — PMS |
 | `pim.csv` | Produção industrial por categoria econômica | IBGE/SIDRA 8887 | 07 — PIM-PF |
 | `pnadc.csv` | Força de trabalho, ocupação e desocupação | IBGE/SIDRA 6318 | 08 — PNADC |
+| `pib.csv` | PIB trimestral: número-índice com e sem ajuste sazonal | IBGE/SIDRA 1620 e 1621 | 04 — PIB |
 | `caged.csv` | Admissões, desligamentos e saldo de emprego formal | Ipeadata (Novo CAGED) | 09 — CAGED |
 | `ipca.csv` | IPCA: número-índice e variações | IBGE/SIDRA | 10 e 12 — Inflação |
 | `ipca_grupos.csv` | IPCA por grupo, com peso e variação mensal | IBGE/SIDRA | 11 — Desvendando o IPCA |
