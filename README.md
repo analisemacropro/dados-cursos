@@ -33,6 +33,19 @@ tabela <- readr::read_csv("https://raw.githubusercontent.com/analisemacropro/dad
 Os arquivos do TSE são dados públicos de votação agregada por seção eleitoral, sem identificação de eleitores.
 
 
+### `str/` — Séries Temporais usando o R
+
+| Arquivo | Conteúdo | Aula |
+|---|---|---|
+| `cenarios.csv` | Matriz de cenários dos regressores (produção industrial, desemprego, Selic, câmbio e expectativa de IPCA) para fev/2025–jan/2026. Focus TOP5 coletado em 02–10/01/2025; demais séries por ETS. Coluna `periodo` em `AAAA-MM-DD` | 03 — Regressão de Séries Temporais |
+
+Uso no R:
+
+```r
+cenarios <- readr::read_csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/str/cenarios.csv")
+```
+
+
 ### `conjuntura/` — Análise de Conjuntura
 
 Séries macroeconômicas usadas nos **exercícios interativos** do curso (páginas
