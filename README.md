@@ -85,5 +85,33 @@ precos <- read.csv("https://raw.githubusercontent.com/analisemacropro/dados-curs
 > A série do **Novo CAGED** começa em jan/2020: a anterior foi descontinuada
 > na reformulação de 2020 e não é comparável com esta.
 
+### `teoria-macro/` — Teoria Macroeconômica (R e Python)
+
+Recortes congelados usados nos **projetos guiados** do curso (notebooks do Colab).
+Os notebooks baixam daqui quando o arquivo não está na pasta `data/`.
+
+| Arquivo | Conteúdo | Fonte | Projeto |
+|---|---|---|---|
+| `secao1_salario_minimo.csv` | Salário mínimo nominal e INPC (número-índice), mensal, 2000–2021 | IBGE, Ipeadata | Seção 1 — Salário mínimo |
+| `secao2_pib_trimestral.csv` | PIB trimestral: número-índice sem e com ajuste sazonal, 1996T1–2026T2 | IBGE/SIDRA 1620 e 1621 | Seção 2 — Ciclo econômico |
+| `secao3_pwt_solow.csv` | Brasil, Coreia do Sul e EUA, 1960–2019: PIB, população, emprego, investimento, depreciação e capital humano | Penn World Table 10.0 | Seção 3 — Convergência e Solow |
+| `secao4_pnadc_renda.csv` | Amostra de 30 mil ocupados da PNADC (1º tri/2022): UF, peso reescalado, renda e deflator | IBGE/PNADC (microdados) | Seção 4 — Renda e consumo |
+| `secao4_cnt_consumo.csv` | PIB, consumo das famílias e do governo e poupança bruta, trimestral, 2000–2026 | IBGE/SIDRA 1846 e 2072 | Seção 4 — Renda e consumo |
+| `secao5_selic.csv` | Meta da Selic, mensal, 1999–2026 | BCB/SGS 432 | Seção 5 (R e Python) |
+| `secao5_copom_sentimento.csv` | Índice de sentimento por ata do Copom (62ª à 281ª), com a data da reunião | Atas do Copom (BCB), dicionário Loughran-McDonald | Seção 5 — O tom do Copom (R) |
+| `secao5_inflacao.csv` | IPCA acumulado em 12 meses e meta de inflação, mensal | BCB/SGS 13522 e 13521 | Seção 5 — Regra de Taylor (Python) |
+| `secao5_pib.csv` | PIB trimestral com ajuste sazonal (número-índice) | IBGE/SIDRA 1621 | Seção 5 — Regra de Taylor (Python) |
+
+Uso:
+
+```python
+import pandas as pd
+pd.read_csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/teoria-macro/secao5_selic.csv")
+```
+
+```r
+selic <- read.csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/teoria-macro/secao5_selic.csv")
+```
+
 ---
 © Análise Macro — https://analisemacro.com.br
