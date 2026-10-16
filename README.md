@@ -115,3 +115,28 @@ selic <- read.csv("https://raw.githubusercontent.com/analisemacropro/dados-curso
 
 ---
 © Análise Macro — https://analisemacro.com.br
+
+### `modelagem-previsao/` — Modelagem e Previsão (R e Python)
+
+Dados do curso **Modelagem e Previsão usando R e Python** (Análise Macro), lidos pelas
+aulas e pelos projetos guiados. Nos notebooks, cada arquivo é baixado para a pasta
+`dados/` (ou `data/`, no projeto) com o nome local indicado entre parênteses.
+
+| Arquivo | O que é | Aula |
+|---|---|---|
+| `pnadc202204.csv` | Microdados da PNAD Contínua, 4º trimestre de 2022 (IBGE), só com as colunas usadas nas aulas | mpr18, mpr19, mppy18, mppy19 (`dados/pnadc202204.csv`) |
+| `mp24_dados.csv` | Demanda horária por eletricidade em Victoria, Austrália, em MWh (AEMO) | mpr24, mppy24 (`dados/dados.csv`) |
+| `Youtube04-Eminem.csv` | Comentários de um vídeo da YouTube Spam Collection (UCI), com a marcação de spam | mpr26, mppy26 (`dados/Youtube04-Eminem.csv`) |
+| `mp26_dados_treino.csv` | Amostra de treino dos comentários, já tokenizada (matriz de termos) | mpr26, mppy26 (`dados/dados_treino.csv`) |
+| `mp26_dados_teste.csv` | Amostra de teste dos comentários, já tokenizada (matriz de termos) | mpr26, mppy26 (`dados/dados_teste.csv`) |
+| `Heart.csv` | Pacientes com e sem doença cardíaca (*An Introduction to Statistical Learning*) | mpr29, mppy29 (`dados/Heart.csv`) |
+| `mppy21_dados.csv` | Preço de venda (`Y`) e área do lote (`X`) dos imóveis de Ames, Iowa (De Cock, 2011) | mppy21 (`dados/dados.csv`) |
+| `mppy21_treino.csv` | Amostra de treino dos imóveis de Ames | mppy21 (`dados/treino.csv`) |
+| `mppy21_teste.csv` | Amostra de teste dos imóveis de Ames | mppy21 (`dados/teste.csv`) |
+| `mppy29_dados.csv` | Preços de carros usados da GM de 2005 (car_prices) | mppy29 (`dados/dados.csv`) |
+| `mppy30_dados.csv` | Empréstimos do Lending Club no 1º trimestre de 2016 (lending_club) | mppy30 (`dados/dados.csv`) |
+| `ames.csv` | Imóveis de Ames, Iowa: preço de venda e área do lote | mppy32 (`dados/ames.csv`) |
+| `secao6_credit_data.csv` | Ficha de 4.454 clientes de crédito com a classificação bom/mau pagador (credit_data) | mppy28, mppy31 (`dados/dados.csv`); projeto da seção 6 em Python (`data/secao6_credit_data.csv`) |
+
+Os arquivos de mesmo conteúdo nas duas trilhas (conferidos por MD5) aparecem uma vez só.
+Nomes genéricos (`dados.csv`, `treino.csv`) levam o prefixo da aula para não colidir.
