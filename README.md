@@ -12,6 +12,25 @@ Conjuntos de dados reutilizados nos cursos da **Análise Macro** (páginas de au
   pd.read_xml("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/dados.xml")
   ```
 
+### `pyi/` — Python para Investimentos
+
+| Arquivo | Conteúdo | Aula |
+|---|---|---|
+| `iris.csv` | Base iris em CSV | PYI04 — Importação de dados |
+| `iris.xlsx` | Base iris em planilha Excel | PYI04 — Importação de dados |
+| `olympics.dta` | Base de atletas olímpicos em formato Stata | PYI04 — Importação de dados |
+| `exemplo.pdf` | PDF de texto para extração | PYI04 — Importação de dados |
+| `exemplo_tabela.pdf` | PDF com a tabela mtcars | PYI04 — Importação de dados |
+| `casas_ponta_grossa.csv` | Anúncios de casas em Ponta Grossa (PR) | PYI06 — Visualização de dados |
+| `auxilio_rj_2020.csv` | Auxílio emergencial no RJ, total por mês e município (abr–dez/2020, CGU) | PYI09 — Microdados |
+
+Uso no Python:
+
+```python
+import pandas as pd
+casas = pd.read_csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/pyi/casas_ponta_grossa.csv")
+```
+
 ### `rad/` — Programação em R para Análise de Dados
 
 | Arquivo | Conteúdo | Aula |
