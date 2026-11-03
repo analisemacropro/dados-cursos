@@ -12,6 +12,22 @@ Conjuntos de dados reutilizados nos cursos da **Análise Macro** (páginas de au
   pd.read_xml("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/dados.xml")
   ```
 
+### `fad/` — Fundamentos de Análise de Dados
+
+| Arquivo | Conteúdo | Aula |
+|---|---|---|
+| `weather_stations.db` | Banco SQLite com a tabela `station_data` (registros diários de estações meteorológicas) | FAD09 — Introdução à linguagem SQL |
+| `dados.csv` | PIB trimestral (índice, IBGE tabela 1621, com ajuste sazonal, média 1995 = 100) | FAD14 — Regressão linear |
+| `pib_potencial.xlsx` | Planilha com o cálculo manual da regressão (tendência do PIB) | FAD14 — Regressão linear |
+
+Uso no R (o banco SQLite precisa ser baixado antes de conectar):
+
+```r
+db <- tempfile(fileext = ".db")
+download.file("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/fad/weather_stations.db", db, mode = "wb")
+con <- DBI::dbConnect(RSQLite::SQLite(), dbname = db)
+```
+
 ### `pyi/` — Python para Investimentos
 
 | Arquivo | Conteúdo | Aula |
