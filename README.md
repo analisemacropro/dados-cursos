@@ -159,3 +159,45 @@ aulas e pelos projetos guiados. Nos notebooks, cada arquivo é baixado para a pa
 
 Os arquivos de mesmo conteúdo nas duas trilhas (conferidos por MD5) aparecem uma vez só.
 Nomes genéricos (`dados.csv`, `treino.csv`) levam o prefixo da aula para não colidir.
+
+
+### `mfgp/` — Mercado Financeiro e Gestão de Portfólios
+
+Arquivos lidos pelos notebooks das aulas e dos projetos guiados do curso (Python). Os projetos guiados são os notebooks do fim de cada seção.
+
+| Arquivo | Conteúdo | Aula |
+|---|---|---|
+| `acoes_yf.csv` | Preços diários de ações do Yahoo Finance (Adj Close, Close, High, Low, Open, Volume) | Projeto Seção 1 |
+| `agregados.csv` | Agregados monetários M1 a M4 (BCB/SGS) | Projeto Seção 2 |
+| `cdi-diario.csv` | CDI diário (BCB/SGS) | Projeto Seção 4 |
+| `cdi-mensal.csv` | CDI mensal (BCB/SGS) | Projeto Seção 5 |
+| `credito.csv` | Concessões, saldos, taxas e inadimplência do crédito (BCB/SGS) | Projeto Seção 2 |
+| `ettj_pre.csv` | Curva de juros prefixada DI x pré (B3) | Projeto Seção 3 |
+| `focus_ipca_2023.csv` | Expectativas do Focus para o IPCA de 2023 (BCB) | Projeto Seção 1 |
+| `focus_selic.csv` | Selic esperada pelo Focus, por data da pesquisa e reunião do Copom (BCB) | Projeto Seção 2 |
+| `fundamentus.csv` | Indicadores fundamentalistas das ações (Fundamentus) | Projeto Seção 3 |
+| `google_stock.csv` | Retornos diários do Google e do S&P 500 em 2015 (pacote causaldata) | Projeto Seção 5 |
+| `ibovespa-diario.csv` | Ibovespa diário (Yahoo Finance) | Projeto Seção 4 |
+| `ibovespa-mensal.csv` | Ibovespa mensal (Yahoo Finance) | Projeto Seção 5 |
+| `ibovespa.csv` | Ibovespa diário com abertura, máxima, mínima, fechamento e volume (Yahoo Finance) | Projeto Seção 4 |
+| `ipca.csv` | IPCA, variação mensal (BCB/SGS) | Projeto Seção 1 |
+| `ipca_exp_12m.csv` | IPCA esperado para 12 meses à frente, Focus (BCB) | Projeto Seção 2 |
+| `ipca_sidra.csv` | IPCA do IBGE/SIDRA | Projeto Seção 2 |
+| `nefin_factors.csv` | Fatores de risco diários do NEFIN (mercado, SMB, HML, WML, IML, taxa livre de risco) | Projeto Seção 5 |
+| `precos-diarios.csv` | Preços diários de BBDC4, ITSA4, GGBR4 e WEGE3 (Yahoo Finance) | Projetos Seções 4 e 5 |
+| `precos-mensais-4acoes.csv` | Preços mensais de BBDC4, ITSA4, GGBR4 e WEGE3 (Yahoo Finance) | Projeto Seção 4 |
+| `precos-mensais-capm.csv` | Preços mensais de BBDC4, ITSA4, VALE3 e WEGE3 (Yahoo Finance) | Projeto Seção 5 |
+| `precotaxatesourodireto.csv` | Preços e taxas do Tesouro Direto, todos os títulos, 12/2004 a 08/2026 (planilhas históricas do Tesouro), separado por ponto e vírgula | Projeto Seção 3 |
+| `retornos_itub4.csv` | Retornos diários da ITUB4, em % | Projeto Seção 1 |
+| `sgs-mensais.csv` | Selic, CDB pré e pós, CDI, TJLP e TLP mensais (BCB/SGS; CDB até 01/2024) | Projeto Seção 3 |
+| `treasuries.csv` | Treasuries de 10 e 3 anos (FRED) | Projeto Seção 1 |
+| `IBOVDia_30-10-23.csv` | Carteira teórica do Ibovespa de 30/10/2023 (B3), separado por ponto e vírgula, latin1 | MFGP21 — Fama-French |
+| `famafrench.csv` | Fatores de Fama-French dos EUA (Kenneth French), diários | MFGP22 — Estudo de eventos |
+| `returns_GAFAM.csv` | Retornos diários de AAPL, AMZN, FB, GOOG, MSFT e SPY | MFGP22 — Estudo de eventos |
+
+Uso no Python:
+
+```python
+import pandas as pd
+retornos = pd.read_csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/mfgp/retornos_itub4.csv")
+```
