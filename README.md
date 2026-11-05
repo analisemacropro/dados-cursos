@@ -217,3 +217,20 @@ Uso no Python:
 import pandas as pd
 retornos = pd.read_csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/mfgp/retornos_itub4.csv")
 ```
+
+### `sql/` — SQL para Negócios e Tomada de Decisão
+
+| Arquivo | Conteúdo | Uso |
+|---|---|---|
+| `rexon_metals.db` | Banco SQLite da Rexon Metals (tabelas `CUSTOMER`, `PRODUCT`, `CUSTOMER_ORDER`) | Projeto guiado do Módulo 4 |
+| `dataset_star_schema_churn.sql` | Script PostgreSQL do esquema estrela de churn da StreamFlix (fato_assinaturas e dimensões; dados gerados com `random()`) | Projeto guiado do Módulo 5 |
+
+O banco `weather_stations.db` usado no Módulo 3 é o mesmo de `fad/`.
+
+Uso no Python:
+
+```python
+import urllib.request, sqlite3
+urllib.request.urlretrieve("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/sql/rexon_metals.db", "rexon_metals.db")
+con = sqlite3.connect("rexon_metals.db")
+```
