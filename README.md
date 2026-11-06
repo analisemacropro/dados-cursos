@@ -224,6 +224,7 @@ retornos = pd.read_csv("https://raw.githubusercontent.com/analisemacropro/dados-
 |---|---|---|
 | `rexon_metals.db` | Banco SQLite da Rexon Metals (tabelas `CUSTOMER`, `PRODUCT`, `CUSTOMER_ORDER`) | Projeto guiado do Módulo 4 |
 | `dataset_star_schema_churn.sql` | Script PostgreSQL do esquema estrela de churn da StreamFlix (fato_assinaturas e dimensões; dados gerados com `random()`) | Projeto guiado do Módulo 5 |
+| `backup_completo.sql` | Dump PostgreSQL do data warehouse da CVM (DFP 2019–2022: `dim_empresas`, contas, tempo e a tabela fato) | Aula 17 (indicadores financeiros) |
 
 O banco `weather_stations.db` usado no Módulo 3 é o mesmo de `fad/`.
 
