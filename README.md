@@ -81,6 +81,28 @@ cenarios <- readr::read_csv("https://raw.githubusercontent.com/analisemacropro/d
 ```
 
 
+### `stpy/` — Análise de Séries Temporais usando Python
+
+Dados dos projetos guiados (notebooks Colab), salvos com data final em dez/2024.
+
+| Arquivo | Conteúdo | Projeto |
+|---|---|---|
+| `projeto-mod1-sgs-mensal.csv` | Séries mensais do SGS/BCB, jan/2007 a dez/2024: IPCA mensal (433), IPCA 12 meses (13522), câmbio (3696), Selic anualizada (4189), desemprego PNAD (24369), IPCA livres (11428) e monitorados (4449) | Módulo 1: Raio-X da inflação |
+| `projeto-mod2-ipca-servicos.csv` | IPCA de serviços, variação % mensal (SGS 10844), jan/2007 a dez/2024 | Módulo 2: Prever o IPCA de serviços |
+| `projeto-mod2-precos-livres.csv` | IPCA preços livres, variação % mensal (SGS 11428), jan/2007 a dez/2024 | Módulo 2: Prever o IPCA de serviços |
+| `projeto-mod4-sgs-mensal.csv` | Séries mensais do SGS/BCB, jan/2003 a dez/2024: Selic anualizada (4189), Selic % a.m. (4390), IPCA (433), câmbio venda média (3698), IBC-Br dessazonalizado (24364) | Módulo 4: Política monetária em um VAR |
+| `projeto-mod5-juros.csv` | Selic anualizada (SGS 4189) e taxas prefixadas de 1 e 2 anos a prazo constante (LTN, Tesouro Direto, interpolação linear, média mensal), jan/2010 a dez/2024 | Módulo 5: Juros longos e curtos |
+| `projeto-mod6-selic-ipca.csv` | Selic média do mês (SGS 4189) e IPCA em 12 meses (SGS 13522), jan/2002 a dez/2024 | Módulo 6: Selic, expectativas e inflação |
+| `projeto-mod6-focus-ipca-12m.csv` | Focus/BCB: mediana diária da expectativa de IPCA 12 meses à frente (suavizada), 2002 a 2024 | Módulo 6: Selic, expectativas e inflação |
+| `projeto-mod6-cambio.csv` | Câmbio R$/US$, média mensal de venda (SGS 3698), jan/2002 a dez/2024 | Módulo 6: Selic, expectativas e inflação |
+
+Uso:
+```python
+import pandas as pd
+repositorio = "https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/stpy/"
+dados = pd.read_csv(repositorio + "projeto-mod4-sgs-mensal.csv", index_col = "data", parse_dates = True)
+```
+
 ### `conjuntura/` — Análise de Conjuntura
 
 Séries macroeconômicas usadas nos **exercícios interativos** do curso (páginas
