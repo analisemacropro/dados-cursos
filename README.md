@@ -96,6 +96,20 @@ Dados dos projetos guiados (notebooks Colab), salvos com data final em dez/2024.
 | `projeto-mod6-focus-ipca-12m.csv` | Focus/BCB: mediana diária da expectativa de IPCA 12 meses à frente (suavizada), 2002 a 2024 | Módulo 6: Selic, expectativas e inflação |
 | `projeto-mod6-cambio.csv` | Câmbio R$/US$, média mensal de venda (SGS 3698), jan/2002 a dez/2024 | Módulo 6: Selic, expectativas e inflação |
 
+Dados locais das aulas (pasta `aulas/stpyNN/`, baixados pela célula de dados de cada notebook):
+
+| Arquivo | Conteúdo | Aula |
+|---|---|---|
+| `aulas/stpy03/dados.csv`, `cenarios.csv` | Base do modelo de inflação (IPCA, câmbio, Selic, desemprego, expectativas, PIM-PF) e cenários | STPY03 — Regressão de séries temporais |
+| `aulas/stpy04/hiato_ifi_2025-03-28.xlsx`, `xgdvConsulta.csv` | Hiato do produto da IFI (versão de mar/2025) e Indicador de Incerteza da Economia (FGV) | STPY04 — Curva IS |
+| `aulas/stpy12/dados.csv` | Inflação, expectativas, câmbio, desemprego e produção industrial | STPY12 — Vetores autorregressivos |
+| `aulas/stpy14/dados.csv` | Desemprego, IPCA e Selic mensais (2002–2014) | STPY14 — SVAR |
+| `aulas/stpy18/dados.csv` | Indicador de Incerteza da Economia (FGV) | STPY18 — Dívida bruta e incerteza |
+| `aulas/stpy20/xgdvConsulta.csv` | Indicadores da FGV usados no VEC do desemprego | STPY20 — Previsão do desemprego |
+| `aulas/stpy21/dados_cds.csv`, `dados_selic.csv` | CDS Brasil 5 anos e Selic diários | STPY21 — Causalidade de Granger |
+| `aulas/stpy22/dados.csv` | Dívida bruta e incerteza (2006–2016) | STPY22 — Toda-Yamamoto |
+| `aulas/stpy23/dados.csv` | Carga de energia elétrica (ONS) | STPY23 — Energia elétrica e PIB |
+
 Uso:
 ```python
 import pandas as pd
