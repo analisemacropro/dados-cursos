@@ -213,6 +213,27 @@ Os arquivos de mesmo conteúdo nas duas trilhas (conferidos por MD5) aparecem um
 Nomes genéricos (`dados.csv`, `treino.csv`) levam o prefixo da aula para não colidir.
 
 
+### `econometria/` — Introdução à Econometria (R e Python)
+
+Recortes congelados usados nos **projetos guiados** do curso (notebooks do Colab).
+Os notebooks baixam daqui quando o arquivo não está na pasta `data/`.
+
+| Arquivo | Conteúdo | Fonte | Projeto |
+|---|---|---|---|
+| `municipios_2022.csv` | 5.570 municípios em 2022: UF, região, população, área, densidade, PIB, PIB per capita (mil R$), taxa de alfabetização (15 anos ou mais) e taxa de urbanização | IBGE: PIB dos Municípios (SIDRA 5938) e Censo 2022 (SIDRA 4714, 9543 e 9923) | Seções 1 a 4 (R e Python) |
+| `phillips_brasil.csv` | IPCA acumulado em 12 meses e taxa de desocupação da PNAD Contínua, mensal, 2012–2026 | BCB/SGS 13522 e 24369 | Seção 4 — Curva de Phillips (R) |
+
+Uso:
+
+```python
+import pandas as pd
+pd.read_csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/econometria/municipios_2022.csv")
+```
+
+```r
+municipios <- read.csv("https://raw.githubusercontent.com/analisemacropro/dados-cursos/main/econometria/municipios_2022.csv")
+```
+
 ### `mfgp/` — Mercado Financeiro e Gestão de Portfólios
 
 Arquivos lidos pelos notebooks das aulas e dos projetos guiados do curso (Python). Os projetos guiados são os notebooks do fim de cada seção.
